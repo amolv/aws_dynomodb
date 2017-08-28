@@ -1,0 +1,37 @@
+Created table. Table description JSON: {
+  "TableDescription": {
+    "AttributeDefinitions": [
+      {
+        "AttributeName": "year",
+        "AttributeType": "N"
+      },
+      {
+        "AttributeName": "title",
+        "AttributeType": "S"
+      }
+    ],
+    "TableName": "Movies",
+    "KeySchema": [
+      {
+        "AttributeName": "year",
+        "KeyType": "HASH"
+      },
+      {
+        "AttributeName": "title",
+        "KeyType": "RANGE"
+      }
+    ],
+    "TableStatus": "ACTIVE",
+    "CreationDateTime": "2017-08-21T11:11:48.745Z",
+    "ProvisionedThroughput": {
+      "LastIncreaseDateTime": "1970-01-01T00:00:00.000Z",
+      "LastDecreaseDateTime": "1970-01-01T00:00:00.000Z",
+      "NumberOfDecreasesToday": 0,
+      "ReadCapacityUnits": 10,
+      "WriteCapacityUnits": 10
+    },
+    "TableSizeBytes": 0,
+    "ItemCount": 0,
+    "TableArn": "arn:aws:dynamodb:ddblocal:000000000000:table/Movies"
+  }
+}
